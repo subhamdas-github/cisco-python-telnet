@@ -21,3 +21,7 @@ try in terminal : telnet <your machine ip address>
   Password: <your password>
   R1>
 [It's working now !!!]
+
+R1# debug telnet
+R1# sh line
+R1# sh ip int brief
