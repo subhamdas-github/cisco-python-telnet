@@ -1,7 +1,7 @@
 import getpass
 import telnetlib
 
-HOST = "localhost" # Ip address of the router
+HOST = "<your local ip>" # Ip address of the router
 user = input("Enter your telnet username: ")
 password = getpass.getpass()
 
@@ -13,6 +13,7 @@ if password:
     tn.read_until(b"Password: ")
     tn.write(password.encode('ascii') + b"\n")
 
+    
 tn.write(b"enable\n")
 tn.write(b"cisco\n")
 tn.write(b"conf t\n")
